@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ЕЛектроніка</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html,
+    body,
+    header,
+    .carousel{
+      height: 60vh;
+    }
+    @media (max-width: 740px){
+      html,
+      body,
+      header,
+      .carousel{
+        height: 100vh;
+      }
+    }
+@media (min-width: 800px) and (max-width: 850px){
+  html,
+  body,
+  header,
+  .carousel{
+    height: 100vh;
+  }
+}
+  </style>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <div class="container">
+    <a href="#" class="navbar-brand waves-effect">
+<strong class="red-text">ЕЛектроніка</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarContent" aria-controls="navbarContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link waves-effect">Головна</a>
+      </li>
+      <li class="nav-item">
+<a href="delivery.html" class="nav-link waves-effect">Доставка та оплата</a>
+      </li>
+      <li class="nav-item">
+<a href="contact.html" class="nav-link waves-effect">Контакти</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+    </ul>
+    <div class="d-flex">
+      <button class="btn btn-outline-success" data-toggle="modal" data-target="#SignIN">Sign in</button>
+      <button class="btn btn-outline-danger ml-3" data-toggle="modal" data-target="#SignOUT">Sign out</button>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<!--Реєстрація-->
+<div class="modal fade" id="SignIN" tabindex="1" aria-labelledby="SignINLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+<h5 class="modal-title" id="SignINLabel">Реєстрація</h5>
+<button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div class="row mb-3">
+          <label for="InputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="InputEmail">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="InputPass" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="InputPass">
+          </div>
+        </div>
+        <fieldset>
+          <div class="row mb-3">
+            <legend class="col-form-label col-sm-3">Чи є вам 18?</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="radios" value="option1" id="radios1" checked>
+                <label for="radios1" class="form-check-label">Так</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="radios" value="option2" id="radios2">
+                <label for="radios2" class="form-check-label">Ні</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-form-label col-sm-2"></div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input type="checkbox" id="gridCheck" class="form-control form-check-input">
+                <label for="gridCheck" class="form-check-label">Зберегти пароль</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+      <button class="btn btn-secondary">Зберегти</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Авторизація-->
+<div class="modal fade" id="SignOUT" tabindex="1" aria-labelledby="SignOUTLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+  <h5 class="modal-title" id="SignOUTLabel">Авторизація</h5>
+  <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="row mb-3">
+            <label for="InputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="InputEmail">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="InputPass" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="InputPass">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+        <button class="btn btn-secondary">Зберегти</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<main class="mt-5 pt-4">
+ <div class="container dark-grey-text mt-5">
+   <div class="row wow fadeIn">
+     <div class="col-md-6 mb-4">
+       <img src="https://touch.com.ua/upload/resize_cache/webp/iblock/su0/500_500_1/su0glja76hhmn04hdzxx4mk215vfmoz9.webp" alt="Asus" class="img-fluid">
+     </div>
+     <div class="col-md-6 mb-4">
+       <div class="p-4">
+         <div class="mb-3">
+           <a href="#">
+<span class="badge purple mr-1">Ноутбуки</span>
+           </a>
+         </div>
+         <p class="lead">
+		 <strong><span class="mr-1">Ноутбук ASUS ROG Strix G15 G513IC</span></strong>
+		 <span class="mr-1">34999 грн</span>
+         </p>
+         <div class="tabbable">
+  <ul class="nav nav-tabs">
+    <li class="active"><a class="nav-link" href="#tab1" data-toggle="tab">Опис</a></li>
+    <li><a class="nav-link" href="#tab2" data-toggle="tab">Характеристики</a></li>
+	    <li><a class="nav-link" href="#tab3" data-toggle="tab">Відгуки</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p>Ноутбуки ROG Strix G15 і G17, являють собою наділену всіма необхідними для комфортної гри і продуктивної роботи функціями мобільну платформу на базі операційної системи Windows 10. Його потужна апаратна конфігурація дозволяє проявити всі свої переваги чудовому дисплею з відмінними швидкісними характеристиками (частота часу відгуку – 3 мс). Стабільну роботу компонентів гарантує інтелектуальна система охолодження, причому як термоінтерфейс центрального процесора застосовується високоефективний рідкий метал.</p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p>Тип Ноутбуки
+<p>Бренд Asus
+<p>Серія Asus ROG Strix G15
+<p>Тип ноутбука Ігровий
+<p>Тип екрану IPS
+<p>Діагональ екрану 15.6''
+<p>Роздільна здатність дисплея Full HD (1920x1080)
+<p>Сімейство процесорів AMD Ryzen 7
+<p>Процесор AMD Ryzen 7 4800H
+<p>Кількість ядер 8
+<p>Частота процесора 2.9 – 4.2 ГГц
+    </div>
+	 <div class="tab-pane" id="tab3">
+	                  <div class="item active">
+                	<div class="row">
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><strong>Lora J.</strong><p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века</p></a></div>
+                  	  <div class="col-md-3"><a href="#" class="thumbnail"><strong>Maks B..</strong><p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века</p></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><strong>Danil R.</strong><p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века</p></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+		</div>
+  </div>
+</div>
+
+<form class="d-flex justify-content-left" action="">
+  <input type="number" value="1" aria-label="Search" style="width: 100px" class="form-control">
+  <button type="submit" class="btn btn-primary btn-md my-0 p" name="button">Додати у кошик <i class="fa fa-shopping-cart ml-1"></i></button>
+</form>
+       </div>
+     </div>
+   </div>
+ </div>
+</main>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>

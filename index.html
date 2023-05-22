@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ЕЛектроніка</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html,
+    body,
+    header,
+    .carousel{
+      height: 60vh;
+    }
+    @media (max-width: 740px){
+      html,
+      body,
+      header,
+      .carousel{
+        height: 100vh;
+      }
+    }
+@media (min-width: 800px) and (max-width: 850px){
+  html,
+  body,
+  header,
+  .carousel{
+    height: 100vh;
+  }
+}
+  </style>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <div class="container">
+    <a href="#" class="navbar-brand waves-effect">
+<strong class="red-text">ЕЛектроніка</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarContent" aria-controls="navbarContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a href="index.html" class="nav-link waves-effect">Головна</a>
+      </li>
+      <li class="nav-item">
+<a href="delivery.html" class="nav-link waves-effect">Доставка та оплата</a>
+      </li>
+      <li class="nav-item">
+<a href="contact.html" class="nav-link waves-effect">Контакти</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+    </ul>
+    <div class="d-flex">
+      <button class="btn btn-outline-success" data-toggle="modal" data-target="#SignIN">Sign in</button>
+      <button class="btn btn-outline-danger ml-3" data-toggle="modal" data-target="#SignOUT">Sign out</button>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<!--Реєстрація-->
+<div class="modal fade" id="SignIN" tabindex="1" aria-labelledby="SignINLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+<h5 class="modal-title" id="SignINLabel">Реєстрація</h5>
+<button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div class="row mb-3">
+          <label for="InputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="InputEmail">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="InputPass" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="InputPass">
+          </div>
+        </div>
+        <fieldset>
+          <div class="row mb-3">
+            <legend class="col-form-label col-sm-3">Чи є вам 18?</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="radios" value="option1" id="radios1" checked>
+                <label for="radios1" class="form-check-label">Так</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="radios" value="option2" id="radios2">
+                <label for="radios2" class="form-check-label">Ні</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-form-label col-sm-2"></div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input type="checkbox" id="gridCheck" class="form-control form-check-input">
+                <label for="gridCheck" class="form-check-label">Зберегти пароль</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+      <button class="btn btn-secondary">Зберегти</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Авторизація-->
+<div class="modal fade" id="SignOUT" tabindex="1" aria-labelledby="SignOUTLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+  <h5 class="modal-title" id="SignOUTLabel">Авторизація</h5>
+  <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="row mb-3">
+            <label for="InputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="InputEmail">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="InputPass" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="InputPass">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+        <button class="btn btn-secondary">Зберегти</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--carousel-->
+<div id="carousel-ex" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li class="active" data-targer="#carousel-ex" data-slide-to="0"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view" style="background-image: url('https://osvita.ua/doc/images/news/628/62871/Electronics_e.PNG');
+      background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+<strong>ЕЛектроніка</strong>
+            </h1>
+
+            <p>
+<strong>Інтернет-магазин улюбленої техніки</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
+      <span class="navbar-brand">Категорії:</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#nextNav" aria-controls="nextNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nextNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+<a href="#" class="nav-link">Все</a>
+        </li>
+        <li class="nav-item">
+<a href="#" class="nav-link">Смартфони</a>
+        </li>
+        <li class="nav-item">
+<a href="#" class="nav-link">Планшети</a>
+        </li>
+        <li class="nav-item">
+<a href="#" class="nav-link">Ноутбуки і ПК</a>
+        </li>
+		 <li class="nav-item">
+<a href="#" class="nav-link">Ігрові консолі</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input type="text" class="form-control mr-sm-2" placeholder="Пошук" aria-label="Пошук">
+        </div>
+      </form>
+    </div>
+    </nav>
+    
+	<section class="text-center mb-4">
+    <!--1 block-->
+	 <div class="row wow fadeIn">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://touch.com.ua/upload/resize_cache/webp/iblock/d13/500_500_1/d13shboc22swkmthjzqu3087p1q6pg30.webp" alt="Iphone 14 PRO">
+<a href="iphone14.html">
+<div class="mask rgba-white-slight"></div></a>
+            </div>
+            <div class="card-body text-center">
+              <a href="#" class="grey-text"> <h5>Смартфон</h5> </a>
+              <h5> <strong> <a href="#" class="dark-grey-text"></a>Apple iPhone 14 Pro Max 128GB<span class="badge badge-pill danger-color">NEW</span> </strong> </h5>
+              <h4 class="font-weight-bold red-text"> <strong>46696 грн</strong> </h4>
+            </div>
+          </div>
+        </div>
+	<!--2 block-->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://touch.com.ua/upload/resize_cache/webp/iblock/su0/500_500_1/su0glja76hhmn04hdzxx4mk215vfmoz9.webp" alt="ASUS">
+<a href="asusrog.html">
+<div class="mask rgba-white-slight"></div></a>
+            </div>
+            <div class="card-body text-center">
+              <a href="#" class="grey-text"> <h5>Ноутбук</h5> </a>
+              <h5> <strong> <a href="#" class="dark-grey-text"></a>ASUS ROG Strix G15 G513IC</strong> </h5>
+              <h4 class="font-weight-bold red-text"> <strong>34999 грн</strong> </h4>
+            </div>
+          </div>
+        </div>
+	<!--3 block-->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://touch.com.ua/upload/resize_cache/webp/iblock/f77/500_500_1/f77d32062a64d6502606db85edc23f67.webp" alt="Xbox">
+<a href="xboxx.html">
+<div class="mask rgba-white-slight"></div></a>
+            </div>
+            <div class="card-body text-center">
+              <a href="#" class="grey-text"> <h5>Ігрова консоль</h5> </a>
+              <h5> <strong> <a href="#" class="dark-grey-text"></a>Microsoft Xbox Series X 1TB<span class="badge badge-pill danger-color">SALE</span> </strong> </h5>
+              <h4 class="font-weight-bold red-text"> <strong><del>21999 грн</strong></del><strong> 19999 грн</strong> </h4>
+            </div>
+          </div>
+        </div>
+	<!--4 block-->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://touch.com.ua/upload/resize_cache/webp/iblock/r5g/500_500_1/r5g9q18l6px9p4smhse7bngljba2tw6j.webp" alt="Poco">
+<a href="xiaomi.html">
+<div class="mask rgba-white-slight"></div></a>
+            </div>
+            <div class="card-body text-center">
+              <a href="#" class="grey-text"> <h5>Смартфон</h5> </a>
+              <h5> <strong> <a href="#" class="dark-grey-text"></a>Xiaomi Poco M5 6/128GB</strong> </h5>
+              <h4 class="font-weight-bold red-text"> <strong>6499 грн</strong> </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!--Сторінки-->
+    <nav class="d-flex justify-content-center wow fadeIn">
+      <ul class="pagination pg-blue">
+        <li class="page-item disabled"> <a href="#" class="page-link" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a> </li>
+          <li class="page-item active"> <a href="#" class="page-link" aria-label="Previous"> <span aria-hidden="true">1</span> </a> </li>
+            <li class="page-item "> <a href="#" class="page-link" aria-label="Previous"> <span aria-hidden="true">2</span> </a> </li>
+              <li class="page-item "> <a href="#" class="page-link" aria-label="Previous"> <span aria-hidden="true">3</span> </a> </li>
+                <li class="page-item "> <a href="#" class="page-link" aria-label="Previous"> <span aria-hidden="true">4</span> </a> </li>
+                  <li class="page-item "> <a href="#" class="page-link" aria-label="Previous"> <span aria-hidden="true">5</span> </a> </li>
+                    <li class="page-item disabled"> <a href="#" class="page-link" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+      </ul>
+    </nav>
+  </div>
+</main>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
